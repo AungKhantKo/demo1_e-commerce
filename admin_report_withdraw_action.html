@@ -434,355 +434,101 @@
 
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
             <h4 class="mb-sm-0">
-                Deposit log
+                Withdraw Details
             </h4>
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="admin_index.html">
                         Home
                     </a></li>
+                    <li class="breadcrumb-item"><a href="admin_report_withdraw.html">
+                        Logs
+                    </a></li>
                     <li class="breadcrumb-item active">
-                        Deposit Logs
+                        Details
                     </li>
                 </ol>
             </div>
         </div>
 
         <div class="card" id="orderList">
-            <div class="card-header border-0">
-                <div class="d-flex align-items-center">
-                    <h5 class="card-title mb-0 flex-grow-1">
-                        Deposit log list
-                    </h5>
+            <div class="card-header border-bottom-dashed">
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm">
+                        <div>
+                            <h5 class="card-title mb-0">
+                                Withdraw log Details
+                            </h5>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="card-body border border-dashed border-end-0 border-start-0">
-                <form action="https://cartuser.kodepixel.com/admin/deposit/logs" method="get">
-                    <div class="row g-3">
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="search-box">
-                                <input type="text" name="trx_code" value="" class="form-control search"
-                                    placeholder="Filter by TRX Number">
-                                <i class="ri-search-line search-icon"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="search-box">
-                                <input type="text" id="datePicker" name="date" value="" class="form-control search"
-                                    placeholder="Search by date">
-                                <i class="ri-time-line search-icon"></i>
-
-                            </div>
-                        </div>
-
-                        <div class="col-xl-2 col-sm-3 col-6">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <div class="rounded_box">
                             <div>
-                                <button type="submit" class="btn btn-primary w-100 waves ripple-light"> <i
-                                        class="ri-equalizer-fill me-1 align-bottom"></i>
-                                    Search
-                                </button>
-                            </div>
-                        </div>
+                                <h6 class="mb-3">Customer information</h6>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                                    Seller
+                                            <span class="font-weight-bold">Artisan Crafts</span>
+                                                                            </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Method
+                                        <span class="font-weight-bold">Fast Withdraw</span>
+                                    </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Time
+                                        <span class="font-weight-bold">2024-05-08 03:08 PM</span>
+                                    </li>
 
-                        <div class="col-xl-2 col-sm-3 col-6">
-                            <div>
-                                <a href="https://cartuser.kodepixel.com/admin/deposit/logs"
-                                    class="btn btn-danger w-100 waves ripple-light"> <i
-                                        class="ri-refresh-line me-1 align-bottom"></i>
-                                    Reset
-                                </a>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Amount
+                                        <span class="font-weight-bold">60 USD</span>
+                                    </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Charge
+                                        <span class="font-weight-bold">50 USD</span>
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Receivable
+                                        <span class="font-weight-bold">560 USD</span>
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Status
+                                        <span class="font-weight-bold">
+                                                                                            <span class="badge badge-soft-success">Received</span>
+                                                                                    </span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
+                                            <div class="col-lg-6">
+                            <div class="p-3 rounded_box">
+                                <h6 class="mb-3">User Withdraw Information</h6>
 
-            <div class="card-body pt-0">
-                <ul class="nav nav-tabs nav-tabs-custom nav-primary mb-3" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active All py-3"  id="All"
-                            href="admin_report_deposite.html" >
-                            <i class="ri-bank-card-line me-1 align-bottom"></i>
-                            All                            Deposits
-                        </a>
-                    </li>
+                                <ul class="list-group">
+                                    
+                                                                                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                    <li class="nav-item">
-                        <a class="nav-link    py-3"  id="Placed"
-                            href="admin_report_deposite_pending.html" >
-                            <i class="ri-loader-line me-1 align-bottom"></i>
-                            Pending Deposits
+                                                Request reason  
+                                                <p>Withdraw</p>
+                                            </li>
+                                                                                                                </ul>
 
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link  Confirmed py-3"  id="Confirmed"
-                            href="admin_report_deposite_approved.html" >
-                            <i class="ri-check-line me-1 align-bottom"></i>
-                            Approved Deposits
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link Processing    py-3"  id="Processing"
-                            href="admin_report_deposite_reject.html" >
-                            <i class="ri-close-circle-line me-1 align-bottom"></i>
-                            Rejected Deposits
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="table-responsive table-card">
-                    <table class="table table-hover table-nowrap align-middle mb-0" >
-                        <thead class="text-muted table-light">
-                            <tr class="text-uppercase">
-                                <th>
-                                    Time
-                                </th>
-                                <th>
-                                    TRX Number
-                                </th>
-                                <th>
-                                    User/Seller
-                                </th>
-                                <th  >Method
-                                </th>
-                                <th>
-                                    Amount
-                                </th>
-                                <th>
-                                    Final Amount
-                                </th>
-
-                                <th >
-                                    Status
-                                </th>
-
-                                <th >
-                                    Action
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <tbody class="list form-check-all">
-                                                         
-                                    <tr>
-                                        <td data-label="Time">
-                                            <span class="fw-bold">2 months ago</span><br>
-                                            2024-09-22 05:12 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            V3TAAYVOLANT98
-                           
-                                        </td>
-
-                                        <td data-label="User">
-                                                                                            <a title="User" data-bs-toggle="tooltip" data-bs-placement="top" href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2145444c4e6142405355545244530f55445255">[email&#160;protected]</a>
-
-                                            
-
-                                        </td>
-
-                                        <td data-label="Method">
-                                            Webxpay
-                                        </td>
-
-                                        <td data-label="Amount">
-                                            20 USD
-                                        </td>
-
-                                        <td data-label="Final Amount">
-                                            20 BDT
-                                        </td>
-
-                                        <td data-label="Status">
-                                                                                            <span class="badge badge-soft-primary">Pending</span>
-                                                                                    </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="admin_report_deposite_action.html"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
-                                    </tr>
-                                                             
-                                    <tr>
-                                        <td data-label="Time">
-                                            <span class="fw-bold">3 months ago</span><br>
-                                            2024-08-13 04:56 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            GZC7VCMI89ZZWQ
-                           
-                                        </td>
-
-                                        <td data-label="User">
-                                                                                            <a title="User" data-bs-toggle="tooltip" data-bs-placement="top" href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5b1b0b8ba95b6b4a7a1a0a6b0a7fba1b0a6a1">[email&#160;protected]</a>
-
-                                            
-
-                                        </td>
-
-                                        <td data-label="Method">
-                                            Stripe
-                                        </td>
-
-                                        <td data-label="Amount">
-                                            10000 USD
-                                        </td>
-
-                                        <td data-label="Final Amount">
-                                            10000 USD
-                                        </td>
-
-                                        <td data-label="Status">
-                                                                                            <span class="badge badge-soft-info">Received</span>
-                                                                                    </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="admin_report_deposite_action.html"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
-                                    </tr>
-                                                             
-                                    <tr>
-                                        <td data-label="Time">
-                                            <span class="fw-bold">3 months ago</span><br>
-                                            2024-08-13 04:56 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            TPOTBGLCDRHYKI
-                           
-                                        </td>
-
-                                        <td data-label="User">
-                                                                                            <a title="User" data-bs-toggle="tooltip" data-bs-placement="top" href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553130383a1536342721202630277b21302621">[email&#160;protected]</a>
-
-                                            
-
-                                        </td>
-
-                                        <td data-label="Method">
-                                            Stripe
-                                        </td>
-
-                                        <td data-label="Amount">
-                                            1000 USD
-                                        </td>
-
-                                        <td data-label="Final Amount">
-                                            1000 USD
-                                        </td>
-
-                                        <td data-label="Status">
-                                                                                            <span class="badge badge-soft-primary">Pending</span>
-                                                                                    </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="admin_report_deposite_action.html"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
-                                    </tr>
-                                                             
-                                    <tr>
-                                        <td data-label="Time">
-                                            <span class="fw-bold">3 months ago</span><br>
-                                            2024-08-13 04:51 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            RQEYIMJ4SEWEM1
-                           
-                                        </td>
-
-                                        <td data-label="User">
-                                            
-                                            <a title="Seller" data-bs-toggle="tooltip" data-bs-placement="top"   href="https://cartuser.kodepixel.com/admin/seller/detail/8" class="fw-bold text-dark">demoseller</a><br>
-                                            Artisan Crafts
-                                               
-                                            
-
-                                        </td>
-
-                                        <td data-label="Method">
-                                            Stripe
-                                        </td>
-
-                                        <td data-label="Amount">
-                                            10 USD
-                                        </td>
-
-                                        <td data-label="Final Amount">
-                                            10 USD
-                                        </td>
-
-                                        <td data-label="Status">
-                                                                                            <span class="badge badge-soft-info">Received</span>
-                                                                                    </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="https://cartuser.kodepixel.com/admin/deposit/show/550"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
-                                    </tr>
-                                                        </tbody>
-                    </table>
-                </div>
-
-                <div class="pagination-wrapper d-flex justify-content-end mt-4">
-                    
-                </div>
+                            </div>
+                        </div>
+                                    </div>
             </div>
         </div>
-
     </div>
 </div>
-
 
                             <footer class="footer">
     <div class="container-fluid">
@@ -802,7 +548,7 @@
             <div class="modal fade" id="aiModal" tabindex="-1" aria-labelledby="aiModal" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-scrollable">
             <form id="AiForm"  method="post">
-                <input type="hidden" name="_token" value="VkSnamKt9iGHErQQXyXh70V4gISnSocWemhQghSg">
+                <input type="hidden" name="_token" value="r7dvrdYSFB1wB9hMkvPvz6tpJo5jKtaBT47Cbl4N">
                 
                 <div class="modal-content">
                     <div class="modal-header bg-light p-3">
@@ -1720,7 +1466,7 @@
         </div>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cartuser.kodepixel.com/assets/global/js/jquery.min.js"></script>
+    <script src="https://cartuser.kodepixel.com/assets/global/js/jquery.min.js"></script>
     <script src="https://cartuser.kodepixel.com/assets/global/js/select2.min.js"></script>
     <script src="https://cartuser.kodepixel.com/assets/global/js/bootstrap.bundle.min.js"></script>
     <script src="https://cartuser.kodepixel.com/assets/backend/js/pages/plugins/lord-icon-2.1.0.js"></script>
@@ -1906,7 +1652,7 @@
                 url: route,
                 data: {
                     data,
-                    "_token" :"VkSnamKt9iGHErQQXyXh70V4gISnSocWemhQghSg",
+                    "_token" :"r7dvrdYSFB1wB9hMkvPvz6tpJo5jKtaBT47Cbl4N",
                 },
                 dataType: 'json',
                 success: function (response) {

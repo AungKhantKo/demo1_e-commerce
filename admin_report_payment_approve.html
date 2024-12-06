@@ -422,7 +422,7 @@
                     </ul>
                 </div>
             </div>
-
+    
     <div class="sidebar-background"></div>
 </div>
 
@@ -434,7 +434,7 @@
 
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
             <h4 class="mb-sm-0">
-                Deposit log
+                Payments log
             </h4>
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
@@ -442,7 +442,7 @@
                         Home
                     </a></li>
                     <li class="breadcrumb-item active">
-                        Deposit Logs
+                        Payment Logs
                     </li>
                 </ol>
             </div>
@@ -452,18 +452,18 @@
             <div class="card-header border-0">
                 <div class="d-flex align-items-center">
                     <h5 class="card-title mb-0 flex-grow-1">
-                        Deposit log list
+                        Payment Log List
                     </h5>
                 </div>
             </div>
 
             <div class="card-body border border-dashed border-end-0 border-start-0">
-                <form action="https://cartuser.kodepixel.com/admin/deposit/logs" method="get">
+                <form action="https://cartuser.kodepixel.com/admin/payment/logs" method="get">
                     <div class="row g-3">
                         <div class="col-xl-4 col-sm-6">
                             <div class="search-box">
-                                <input type="text" name="trx_code" value="" class="form-control search"
-                                    placeholder="Filter by TRX Number">
+                                <input type="text" name="search" value="" class="form-control search"
+                                    placeholder="Search By username or email or name, or payment method">
                                 <i class="ri-search-line search-icon"></i>
                             </div>
                         </div>
@@ -488,7 +488,7 @@
 
                         <div class="col-xl-2 col-sm-3 col-6">
                             <div>
-                                <a href="https://cartuser.kodepixel.com/admin/deposit/logs"
+                                <a href="https://cartuser.kodepixel.com/admin/payment/logs"
                                     class="btn btn-danger w-100 waves ripple-light"> <i
                                         class="ri-refresh-line me-1 align-bottom"></i>
                                     Reset
@@ -502,36 +502,36 @@
             <div class="card-body pt-0">
                 <ul class="nav nav-tabs nav-tabs-custom nav-primary mb-3" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active All py-3"  id="All"
-                            href="admin_report_deposite.html" >
+                        <a class="nav-link  All py-3"  id="All"
+                            href="admin_report_payment.html" >
                             <i class="ri-bank-card-line me-1 align-bottom"></i>
-                            All                            Deposits
+                            All                            Payments
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link    py-3"  id="Placed"
-                            href="admin_report_deposite_pending.html" >
+                            href="admin_report_payment_pending.html" >
                             <i class="ri-loader-line me-1 align-bottom"></i>
-                            Pending Deposits
+                            Pending Payments
 
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  Confirmed py-3"  id="Confirmed"
-                            href="admin_report_deposite_approved.html" >
+                        <a class="nav-link active Confirmed py-3"  id="Confirmed"
+                            href="admin_report_payment_approve.html" >
                             <i class="ri-check-line me-1 align-bottom"></i>
-                            Approved Deposits
+                            Approved Payments
 
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link Processing    py-3"  id="Processing"
-                            href="admin_report_deposite_reject.html" >
+                            href="admin_report_payment_reject.html" >
                             <i class="ri-close-circle-line me-1 align-bottom"></i>
-                            Rejected Deposits
+                            Rejected Payments
                         </a>
                     </li>
                 </ul>
@@ -544,10 +544,7 @@
                                     Time
                                 </th>
                                 <th>
-                                    TRX Number
-                                </th>
-                                <th>
-                                    User/Seller
+                                    User
                                 </th>
                                 <th  >Method
                                 </th>
@@ -561,81 +558,18 @@
                                 <th >
                                     Status
                                 </th>
-
-                                <th >
-                                    Action
-                                </th>
                             </tr>
                         </thead>
 
                         <tbody class="list form-check-all">
-                                                         
-                                    <tr>
+                                                                <tr>
                                         <td data-label="Time">
-                                            <span class="fw-bold">2 months ago</span><br>
-                                            2024-09-22 05:12 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            V3TAAYVOLANT98
-                           
+                                            <span class="fw-bold">4 months ago</span><br>
+                                            2024-07-03 04:07 PM
                                         </td>
 
                                         <td data-label="User">
-                                                                                            <a title="User" data-bs-toggle="tooltip" data-bs-placement="top" href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2145444c4e6142405355545244530f55445255">[email&#160;protected]</a>
-
-                                            
-
-                                        </td>
-
-                                        <td data-label="Method">
-                                            Webxpay
-                                        </td>
-
-                                        <td data-label="Amount">
-                                            20 USD
-                                        </td>
-
-                                        <td data-label="Final Amount">
-                                            20 BDT
-                                        </td>
-
-                                        <td data-label="Status">
-                                                                                            <span class="badge badge-soft-primary">Pending</span>
-                                                                                    </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="admin_report_deposite_action.html"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
-                                    </tr>
-                                                             
-                                    <tr>
-                                        <td data-label="Time">
-                                            <span class="fw-bold">3 months ago</span><br>
-                                            2024-08-13 04:56 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            GZC7VCMI89ZZWQ
-                           
-                                        </td>
-
-                                        <td data-label="User">
-                                                                                            <a title="User" data-bs-toggle="tooltip" data-bs-placement="top" href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5b1b0b8ba95b6b4a7a1a0a6b0a7fba1b0a6a1">[email&#160;protected]</a>
-
+                                                                                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ec8e898e8584ddd4d8d5dfac9b8d989e8ac28f8381">[email&#160;protected]</a>
                                             
 
                                         </td>
@@ -645,137 +579,598 @@
                                         </td>
 
                                         <td data-label="Amount">
-                                            10000 USD
+                                            32 USD
                                         </td>
 
                                         <td data-label="Final Amount">
-                                            10000 USD
+                                            32 USD
                                         </td>
 
                                         <td data-label="Status">
                                                                                             <span class="badge badge-soft-info">Received</span>
                                                                                     </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="admin_report_deposite_action.html"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
                                     </tr>
-                                                             
-                                    <tr>
+                                                                    <tr>
                                         <td data-label="Time">
-                                            <span class="fw-bold">3 months ago</span><br>
-                                            2024-08-13 04:56 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            TPOTBGLCDRHYKI
-                           
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 04:40 PM
                                         </td>
 
                                         <td data-label="User">
-                                                                                            <a title="User" data-bs-toggle="tooltip" data-bs-placement="top" href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553130383a1536342721202630277b21302621">[email&#160;protected]</a>
-
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1773727a785774766563626472653963726463">[email&#160;protected]</a>
                                             
 
                                         </td>
 
                                         <td data-label="Method">
-                                            Stripe
+                                            Mercadopago
                                         </td>
 
                                         <td data-label="Amount">
-                                            1000 USD
+                                            242 USD
                                         </td>
 
                                         <td data-label="Final Amount">
-                                            1000 USD
-                                        </td>
-
-                                        <td data-label="Status">
-                                                                                            <span class="badge badge-soft-primary">Pending</span>
-                                                                                    </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="admin_report_deposite_action.html"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
-                                        </td>
-                                    </tr>
-                                                             
-                                    <tr>
-                                        <td data-label="Time">
-                                            <span class="fw-bold">3 months ago</span><br>
-                                            2024-08-13 04:51 PM
-                                        </td>
-
-                                        <td data-label="TRX Number">
-
-                                            RQEYIMJ4SEWEM1
-                           
-                                        </td>
-
-                                        <td data-label="User">
-                                            
-                                            <a title="Seller" data-bs-toggle="tooltip" data-bs-placement="top"   href="https://cartuser.kodepixel.com/admin/seller/detail/8" class="fw-bold text-dark">demoseller</a><br>
-                                            Artisan Crafts
-                                               
-                                            
-
-                                        </td>
-
-                                        <td data-label="Method">
-                                            Stripe
-                                        </td>
-
-                                        <td data-label="Amount">
-                                            10 USD
-                                        </td>
-
-                                        <td data-label="Final Amount">
-                                            10 USD
+                                            244 USD
                                         </td>
 
                                         <td data-label="Status">
                                                                                             <span class="badge badge-soft-info">Received</span>
                                                                                     </td>
-
-
-                                        <td data-label="Action">
-
-                                            <div class="hstack justify-content-center gap-3">
-            
-                                                <a title="Details" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    href="https://cartuser.kodepixel.com/admin/deposit/show/550"
-                                                    class="fs-18 link-info ms-1"><i class="ri-list-check"></i>
-                                                </a>
-                                            </div>
-    
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 04:39 PM
                                         </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="debabbb3b19ebdbfacaaabadbbacf0aabbadaa">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Payeer
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            242 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            244 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 04:38 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e6a6b63614e6d6f7c7a7b7d6b7c207a6b7d7a">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Payeer
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            2 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            2 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 04:37 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98fcfdf5f7d8fbf9eaecedebfdeab6ecfdebec">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Mercadopago
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            2 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            2 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 04:00 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1a5a4acae81a2a0b3b5b4b2a4b3efb5a4b2b5">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Macey Gutierrez
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            121 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            9532 INR
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 03:35 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6c2c3cbc9e6c5c7d4d2d3d5c3d488d2c3d5d2">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            193 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            193 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 03:31 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4d5f4d59ad7dbd9">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            241 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            241 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 03:30 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9bfafffae8dbfae8ffb5f8f4f6">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            15 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            15 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 02:58 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="284c4d4547684b495a5c5d5b4d5a065c4d5b5c">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            35 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            35 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 02:54 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0b6f6e66644b686a797f7e786e79257f6e787f">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            270 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            270 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 02:51 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa9e9f9795ba999b888e8f899f88d48e9f898e">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            42 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            42 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 02:01 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c383931331c3f3d2e28292f392e7228392f28">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Mercadopago
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            270 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            273 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 02:00 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a8cccdc5c7e8cbc9dadcdddbcdda86dccddbdc">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Payeer
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            270 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            273 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">5 months ago</span><br>
+                                            2024-05-30 02:00 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7a3a2aaa887a4a6b5b3b2b4a2b5e9b3a2b4b3">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Mercadopago
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            270 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            273 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">6 months ago</span><br>
+                                            2024-05-12 04:19 AM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82e6e7efedc2e1e3f0f6f7f1e7f0acf6e7f1f6">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            16 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            16 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">6 months ago</span><br>
+                                            2024-05-10 10:02 AM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0c4c5cdcfe0c3c1d2d4d5d3c5d28ed4c5d3d4">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Paystack
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            19 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            19 NGN
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">6 months ago</span><br>
+                                            2024-05-07 05:41 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5c1c0c8cae5c6c4d7d1d0d6c0d78bd1c0d6d1">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            bkash
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            828 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            82800 BDT
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">6 months ago</span><br>
+                                            2024-05-07 03:02 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5135343c3e1132302325242234237f25342225">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            bkash
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            121 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            12100 BDT
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td data-label="Time">
+                                            <span class="fw-bold">6 months ago</span><br>
+                                            2024-05-07 02:58 PM
+                                        </td>
+
+                                        <td data-label="User">
+                                                                                            <a href="https://cartuser.kodepixel.com/admin/customer/detail/49" class="fw-bold text-dark">Brooke Hatfield</a><br>
+                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="593d3c3436193a382b2d2c2a3c2b772d3c2a2d">[email&#160;protected]</a>
+                                            
+
+                                        </td>
+
+                                        <td data-label="Method">
+                                            Stripe
+                                        </td>
+
+                                        <td data-label="Amount">
+                                            121 USD
+                                        </td>
+
+                                        <td data-label="Final Amount">
+                                            121 USD
+                                        </td>
+
+                                        <td data-label="Status">
+                                                                                            <span class="badge badge-soft-info">Received</span>
+                                                                                    </td>
                                     </tr>
                                                         </tbody>
                     </table>
                 </div>
 
                 <div class="pagination-wrapper d-flex justify-content-end mt-4">
-                    
+                    <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                    <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=2">2</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=3">3</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=4">4</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=5">5</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=6">6</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=7">7</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=8">8</a></li>
+                                                                        
+            
+                            <li class="page-item">
+                    <a class="page-link" href="https://cartuser.kodepixel.com/admin/payment/logs?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
                 </div>
             </div>
         </div>
